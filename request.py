@@ -2,7 +2,9 @@ import requests
 from io import BytesIO
 from PIL import Image
 
-r = requests.get("https://wallpapercave.com/wp/BcXToWf.jpg")
+link = input("Enter the link: ")
+# r = requests.get("https://wallpapercave.com/wp/BcXToWf.jpg")
+r = requests.get(link)
 print("Status code:", r.status_code)
 image = Image.open(BytesIO(r.content))
 print(image.size, image.format, image.mode)

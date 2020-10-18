@@ -27,4 +27,6 @@ def Blocker():
                 host_file.write(ip_address + " " + website + '\n')
                 Label(root, text="Blocked", font='arial 12 bold').place(x=230,y=200)
 
+
+
 root.mainloop()
